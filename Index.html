@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'inverse-primary': '#68dba9', 'secondary': '#9d4300', 'inverse-surface': '#283044', 'on-secondary-container': '#5c2400', 'secondary-container': '#fd761a', 'on-error-container': '#93000a', 'error': '#ba1a1a', 'on-primary': '#ffffff', 'on-error': '#ffffff', 'primary-fixed': '#85f8c4', 'on-tertiary-fixed': '#00201c', 'on-background': '#131b2e', 'on-primary-fixed-variant': '#005137', 'on-tertiary-container': '#f4fffb', 'surface-container-lowest': '#ffffff', 'secondary-fixed-dim': '#ffb690', 'on-secondary-fixed-variant': '#783200', 'on-surface-variant': '#3d4a42', 'on-tertiary-fixed-variant': '#005048', 'tertiary-container': '#008376', 'on-secondary': '#ffffff', 'surface-variant': '#dae2fd', 'surface-container-highest': '#dae2fd', 'surface-dim': '#d2d9f4', 'on-primary-container': '#f5fff7', 'primary-container': '#00855d', 'on-tertiary': '#ffffff', 'inverse-on-surface': '#eef0ff', 'secondary-fixed': '#ffdbca', 'tertiary-fixed': '#71f8e4', 'surface': '#faf8ff', 'error-container': '#ffdad6', 'tertiary-fixed-dim': '#4fdbc8', 'surface-bright': '#faf8ff', 'outline-variant': '#bccac0', 'surface-tint': '#006c4a', 'primary': '#006948', 'outline': '#6d7a72', 'surface-container-low': '#f2f3ff', 'on-surface': '#131b2e', 'on-primary-fixed': '#002114', 'surface-container-high': '#e2e7ff', 'on-secondary-fixed': '#341100', 'surface-container': '#eaedff', 'tertiary': '#00685d', 'background': '#faf8ff', 'primary-fixed-dim': '#68dba9' }, 'borderRadius': { 'DEFAULT': '1rem', 'lg': '2rem', 'xl': '3rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.5rem', 'margin-sm': '1rem', 'gutter': '1rem', 'space-xs': '0.25rem', 'space-sm': '0.5rem', 'margin': '1.25rem', 'space-md': '1rem', 'space-xl': '2.25rem', 'margin-lg': '2rem', 'gutter-sm': '0.75rem', 'gutter-lg': '1.5rem' }, 'fontFamily': { 'body-lg': ['Plus Jakarta Sans'], 'headline-lg-mobile': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'headline-xl': ['Plus Jakarta Sans'], 'headline-sm': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'headline-xl-mobile': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'] }, 'fontSize': { 'body-lg': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'headline-lg-mobile': ['22px', { 'lineHeight': '30px', 'fontWeight': '700' }], 'label-sm': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.02em', 'fontWeight': '700' }], 'label-lg': ['14px', { 'lineHeight': '20px', 'fontWeight': '600' }], 'headline-xl': ['36px', { 'lineHeight': '44px', 'fontWeight': '800' }], 'headline-sm': ['18px', { 'lineHeight': '26px', 'fontWeight': '600' }], 'body-sm': ['12px', { 'lineHeight': '18px', 'fontWeight': '400' }], 'body-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-lg': ['28px', { 'lineHeight': '36px', 'fontWeight': '700' }], 'headline-xl-mobile': ['28px', { 'lineHeight': '36px', 'fontWeight': '800' }], 'label-md': ['12px', { 'lineHeight': '16px', 'fontWeight': '600' }], 'headline-md': ['20px', { 'lineHeight': '28px', 'fontWeight': '700' }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin-sm flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="PetBite Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U1jdjZ5h6dGRfjmQz3pU_HSx6WMTULu06AiGKtDXE5w_MhCDHbDjusSZOKkiORdrs6OqQcCK22FVyKpG_L3z2E7hnJzjo3vd_smg1ty_6-L0xzrW0WE9OCpzhavw_Jx0sWqS_LeDdnlz81sNVxBlQJVBRvoDTA6KmUx2oDC_ijGC0WQ8BX2udPuIXsBYSXY8uzRdFaG5IerOBoZJbtVPyq9pw-ajFOExWx4wOLJVq2YZ8KmTfNOaFaMkVK"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight truncate">PetBite</span><span class="hidden">Inicio</span></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 relative flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary-container"></span></button><div class="p-[2px] rounded-full border-2 border-primary"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1uBRkUtJwAl_VSQgNIy8d5sGp4eO2VqM64QyAnFS6IsaI3dEpplXYvEW3xvcyX2mqm4Vg1oOcSy-HBbXoR-kVQq9y0jNvfXTZBB3o05CeJkssZ8ERKPCzb8gW5206rtpQ_JenianZC1EmR5DQMy_q_oxfdR9xIHOIqUf1c5p_MVSFqRVPHmIvueRanApa7tEnkiZEbTvektno0yx7CaQvu_9A819CM-blodNru71IXNf2Ia2aM6JFBA"/></div></div></div><button class="flex items-center gap-space-xs text-left w-fit py-0.5 rounded-full hover:opacity-80 transition-opacity"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate max-w-[260px]">Enviar a: <strong class="text-on-surface font-semibold">Casa (Av. Los Sauces 421)</strong></span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></button></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<div class="px-margin-sm pt-space-xs pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 flex items-center bg-surface-container-low rounded-full px-space-md py-2.5 shadow-sm transition-all focus-within:bg-surface-container-lowest focus-within:shadow-md">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" placeholder="Buscar alimento, snacks, juguetes..." type="text"/>
+<button aria-label="Limpiar búsqueda" class="text-outline hover:text-on-surface p-1" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<button aria-label="Filtrar catálogo" class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<div class="px-margin-sm py-space-xs">
+<div class="relative overflow-hidden rounded-lg bg-gradient-to-br from-primary-fixed via-surface-container-low to-surface-bright p-space-md shadow-md">
+<div class="absolute -right-10 -bottom-8 w-44 h-44 rounded-full bg-primary-fixed-dim/30 pointer-events-none blur-2xl"></div>
+<div class="relative z-10 flex flex-col items-start max-w-[70%]">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm mb-2">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+          ¡OFERTA ESPECIAL!
+        </span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary-fixed font-extrabold tracking-tight leading-tight mb-1.5">
+          20% OFF en comida seca
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+          Usa el código <span class="font-semibold text-primary px-1.5 py-0.5 bg-surface-container-lowest rounded">PETWELCOME20</span>
+</p>
+<button class="h-10 px-5 rounded-full bg-secondary-container text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-md active:scale-95 transition-transform" type="button">
+<span>Aprovechar ahora</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="absolute right-2 bottom-1 w-28 h-32 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="Happy golden retriever puppy chewing a healthy organic pet treat beside a clean modern mint food bowl, studio lighting on soft sage pastel background, warm friendly pet commercial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaQg1JEquA9VBnRgxgGkUGrcQ-k9B_9ImpZ7pqZx185wjXRosxXH3kFXKnYA4tVwtfpiun6GONyb-IT07zeAz3dQrYZG1CaSQ9Us7ENYv7jhj6-cPlwcuG4XNuxXcIdT8oaKn0EbXjlBoFFKXzFilNJY0VIXrYFz6NIrGcx1AH2ydl9e14AskYcctEHopQnJzT3Q-rnBMNsorBRze41hNDDJX-5Se-AZFu0NzXZr6CbRszaVi1mQLEsg"/>
+</div>
+<div class="flex items-center justify-center gap-1.5 mt-4 pt-1 w-full">
+<span class="w-5 h-1.5 rounded-full bg-primary transition-all"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant transition-all"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant transition-all"></span>
+</div>
+</div>
+</div>
+<div class="pt-space-md pb-space-xs">
+<div class="flex items-center justify-between px-margin-sm mb-2.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Categorías</h3>
+<a class="font-label-md text-label-md text-primary font-semibold flex items-center" href="#">
+        Ver todas
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="flex gap-space-sm overflow-x-auto px-margin-sm no-scrollbar py-1">
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">sound_detection_dog_barking</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">Perros</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">cruelty_free</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Gatos</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-secondary-container flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">cookie</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Snacks</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">sports_baseball</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Juguetes</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-tertiary flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Farmacia</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 min-w-[68px] flex-shrink-0 group" type="button">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">watch</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">Accesorios</span>
+</button>
+</div>
+</div>
+<div class="px-margin-sm py-space-sm">
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5" id="chip-filter-group">
+<button class="h-9 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm" type="button">
+        Todos
+      </button>
+<button class="h-9 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm hover:text-on-surface" type="button">
+        Más vendidos
+      </button>
+<button class="h-9 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm hover:text-on-surface" type="button">
+        Nutrición Natural
+      </button>
+<button class="h-9 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm hover:text-on-surface" type="button">
+        Cachorros
+      </button>
+<button class="h-9 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm hover:text-on-surface" type="button">
+        Adultos
+      </button>
+</div>
+</div>
+<div class="px-margin-sm py-space-xs">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-container text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Productos Destacados</h3>
+</div>
+<span class="font-body-sm text-body-sm text-outline">12 productos</span>
+</div>
+<div class="grid grid-cols-2 gap-gutter-sm">
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-3 shadow-sm relative group">
+<div class="relative w-full h-36 bg-surface-container-low rounded-DEFAULT overflow-hidden mb-2.5 flex items-center justify-center p-2">
+<span class="absolute top-2 left-2 z-10 bg-secondary-container text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+            -15%
+          </span>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Premium dry dog food bag featuring natural salmon and brown rice recipe packaging with Scandinavian mint and clean organic aesthetic on white studio pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCscZsGpLo4nJElN3XYMpa0EkiF-qK3XpnbHgiO7GN83q4DPfm8uBpi4MUrZX7h-B32H2cNxMxqF4lspachwwLulQ61Bw7B0AGL0RLUrfQMotLb_pcNa6LtaAfHp9JWG9htUCTIO5jScM92vHqfsRcQ1ML3AQRVx-qQ1h5CBG_kCXZqQ_TBGJoIPLeL3LzhHFM77k1xJmQ974WXBGz7K3gdXf2r7RuUxoBehIw7SGwnIwHpij1P6ThJAg"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider truncate font-semibold">Acana Wild</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold line-clamp-2 leading-snug min-h-[40px]">
+            Croquetas Salmón &amp; Arroz 3kg
+          </h4>
+<div class="flex items-center gap-1 my-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-outline">(128)</span>
+</div>
+<div class="flex items-end justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-body-sm text-[11px] text-outline line-through leading-none">$34.100</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight text-primary">$28.990</span>
+</div>
+<button aria-label="Añadir al carrito" class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-3 shadow-sm relative group">
+<div class="relative w-full h-36 bg-surface-container-low rounded-DEFAULT overflow-hidden mb-2.5 flex items-center justify-center p-2">
+<span class="absolute top-2 left-2 z-10 bg-primary text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+            Destacado
+          </span>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Pack of healthy dog dental chew sticks with chlorophyll mint green coloring and natural grain texture, packaged in sleek eco-friendly pouch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtqrcaQikzBiDEcn-9E5fx2cxVQxeELt_EQFPr__yUPunhHS4MyvMkWylhj4188gSCH4vSaRByEOS_nBQU8wrkFl6HNnhbR6iEPcppQ2kHTV2WnXLkT8VyCK5nWK9H4MI7ZNDJOLFkbyk3rmXebSGPPe0p5VGiSKFz_wA4MDTMN11DDoC8Gqc9JSMRMzlQHnh4n-MdDIVdP3cYTLObbo5sFe8-zjqW7F_7uI4amnCNIvPBOvz0VtkDCA"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider truncate font-semibold">Hill's Science</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold line-clamp-2 leading-snug min-h-[40px]">
+            Snack Dental Fresh Breath
+          </h4>
+<div class="flex items-center gap-1 my-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-[11px] text-outline">(94)</span>
+</div>
+<div class="flex items-end justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-body-sm text-[11px] text-outline line-through leading-none">$11.500</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight text-primary">$8.990</span>
+</div>
+<button aria-label="Añadir al carrito" class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-3 shadow-sm relative group">
+<div class="relative w-full h-36 bg-surface-container-low rounded-DEFAULT overflow-hidden mb-2.5 flex items-center justify-center p-2">
+<span class="absolute top-2 left-2 z-10 bg-primary text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+            Destacado
+          </span>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Clear kraft bag of 100 percent natural dehydrated chicken breast jerky strips for dogs with transparent window showing pure meat texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm8_xmNJto7WhjY3PrcQ0o5uL2H_spB-808l18whfVsbyAmWWQ7-xTelE59ZfS-m5GUXZXG5MzOoWhVSnAYr3PXcSvJaZVxTXjw6Qz8LhNme3xgy9NuBV6wcEb2hPO7A2zndjaAEadwAjKZ6oW4fwTvE_FItfo6IdxlRZq6uQYxxmmIZ8D14r2cAWyTmEP19Dl9u9NLq8m6w1wLZ_MJKNyOhe2v-eOkU1RNwm7cjx2iyXNmcgW4mQpTg"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider truncate font-semibold">PetBite Pure</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold line-clamp-2 leading-snug min-h-[40px]">
+            Pechuga Deshidratada 200g
+          </h4>
+<div class="flex items-center gap-1 my-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">5.0</span>
+<span class="font-body-sm text-[11px] text-outline">(210)</span>
+</div>
+<div class="flex items-end justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-body-sm text-[11px] text-outline line-through leading-none">$13.900</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight text-primary">$11.490</span>
+</div>
+<button aria-label="Añadir al carrito" class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-3 shadow-sm relative group">
+<div class="relative w-full h-36 bg-surface-container-low rounded-DEFAULT overflow-hidden mb-2.5 flex items-center justify-center p-2">
+<span class="absolute top-2 left-2 z-10 bg-secondary-container text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+            -20%
+          </span>
+<button aria-label="Añadir a favoritos" class="favorite-toggle absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-error active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<img class="w-full h-full object-contain mix-blend-multiply" data-alt="Durable classic red rubber chew toy for active dogs standing on clean reflective surface with subtle soft studio drop shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApqE50-FXNu5zBmmNNg2ULfnHo-s1BcSZP2pmzDiORTJJMmOmHIEw4skv0eVzXbG-S1VyEVumYoDdRQA_17fn4yQ6uV-j0EP5-HhtSpiNyUebyx_v0cPRDk1rDd__dNe1uxPZsqXMPE-eUTbWRdx9FpUfjHbX5jyGa3VIKO_plJSgf7O9fPhUmAKmJEW2pClz8_4gLJ-11YOI50tXTP5qq_uAoXtuTGI5ICFisLCoQbfDBi39HBtXCMg"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider truncate font-semibold">KONG Classic</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold line-clamp-2 leading-snug min-h-[40px]">
+            Juguete Mordedor Resistente
+          </h4>
+<div class="flex items-center gap-1 my-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-[11px] text-outline">(342)</span>
+</div>
+<div class="flex items-end justify-between mt-auto pt-1">
+<div class="flex flex-col">
+<span class="font-body-sm text-[11px] text-outline line-through leading-none">$19.990</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight text-primary">$15.990</span>
+</div>
+<button aria-label="Añadir al carrito" class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-margin-sm pt-space-md">
+<div class="rounded-lg bg-surface-container p-space-md flex items-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">electric_bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="font-label-md text-label-md font-bold text-primary">Envío Flash en 90 min</span>
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Recibe hoy mismo para consentir a tu mejor amigo sin salir de casa.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.querySelectorAll('.favorite-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+      
+      if (isFilled) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-error');
+        btn.classList.add('text-outline');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.remove('text-outline');
+        btn.classList.add('text-error');
+      }
+    });
+  });
+
+  document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      btn.classList.add('scale-125');
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const originalText = icon.textContent;
+      icon.textContent = 'done';
+      
+      setTimeout(() => {
+        btn.classList.remove('scale-125');
+        icon.textContent = originalText;
+      }, 700);
+    });
+  });
+
+  const chips = document.querySelectorAll('#chip-filter-group button');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.className = 'h-9 px-4 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md whitespace-nowrap shadow-sm hover:text-on-surface';
+      });
+      chip.className = 'h-9 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm';
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-8px_24px_rgba(15,23,42,0.04)]" data-active-classes="text-primary font-bold"><div class="h-16 px-gutter flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Inicio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm">Catálogo</span></a><a class="relative flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="carrito" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 min-w-[18px] h-[18px] px-1 bg-secondary-container text-on-primary rounded-full font-label-sm text-[10px] flex items-center justify-center leading-none shadow-sm">3</span></div><span class="font-label-sm text-label-sm">Carrito</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-mascota" href="#"><span class="material-symbols-outlined text-[24px]">pets</span><span class="font-label-sm text-label-sm">Mi Mascota</span></a></div></nav></body></html>
